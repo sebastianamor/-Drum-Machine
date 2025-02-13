@@ -36,16 +36,18 @@ function App() {
 
   return (
     <div id="drum-machine">
+      ドラムの音
       <div id="display">{displayText}</div>
 
       {/* Interruptor de encendido/apagado del sonido */}
-      <label className="switch">
+      <label className="switch" >
         <input
           type="checkbox"
           checked={isSoundOn}
           onChange={() => setIsSoundOn(!isSoundOn)}
         />
-        <span className="toggle">
+        <span className="toggle"  >
+          
           <span className="left">OFF</span>
           <span className="right">ON</span>
         </span>
@@ -68,3 +70,4 @@ function App() {
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
+
